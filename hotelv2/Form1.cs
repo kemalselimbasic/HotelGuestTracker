@@ -37,5 +37,14 @@ namespace hotelv2
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form lgn = new login();
+            MessageBox.Show("Bye", "Log out");
+            lgn.Show();
+            
+            this.Hide();
+        }
     }
 }

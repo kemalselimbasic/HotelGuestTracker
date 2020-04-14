@@ -14,6 +14,8 @@ namespace hotelv2
 {
     public partial class login : Form
     {
+        public string username = "";
+
         baza mongo = new baza();
         public login()
         {
@@ -24,25 +26,36 @@ namespace hotelv2
         {
             Form reg = new register();
             reg.Show();
+          
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string username = textBox1.Text;
+
+            
+
+            username = textBox1.Text;
+        
             string pwd = textBox2.Text;
 
-            var korisnik=mongo.findOne<user>("users",username);
+             var korisnik=mongo.findOne<user>("users",username);
             if(korisnik.password==pwd && korisnik.username == username)
             {
                 Form home = new Form1();
-                
+                 MessageBox.Show("Dobro dosli:" + korisnik.ime + " " + korisnik.prezime, "Uspjesan login!");
                 home.Show();
-                
+               
+                this.Hide();
             }
             else
             {
                 MessageBox.Show("Neuspjesan login pokusajte ponovo!", "Login error");
             }
+        }
+
+        private void login_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

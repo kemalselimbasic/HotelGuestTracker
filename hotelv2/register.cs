@@ -25,11 +25,42 @@ namespace hotelv2
 
         private void button1_Click(object sender, EventArgs e)
         { baza mongo = new baza();
+
+            if (textBox1.Text == "")
+            {
+                MessageBox.Show("Unesite podatke", "Error");
+                goto con;
+            }
+             if (textBox2.Text == "")
+            {
+                MessageBox.Show("Unesite podatke", "Error"); 
+                goto con;
+
+            }
+            if (textBox3.Text == "")
+            {
+                MessageBox.Show("Unesite podatke", "Error");
+                goto con;
+
+            }
+            if (textBox4.Text == "")
+            {
+                MessageBox.Show("Unesite podatke", "Error");
+                goto con;
+
+            }
+            if (textBox5.Text == "")
+            {
+                MessageBox.Show("Unesite podatke", "Error");
+                goto con;
+
+            } con:
             if (textBox4.Text != textBox5.Text)
             {
                 MessageBox.Show("Lozinke nisu iste", "Error");
                 this.Close();
             }
+           
             user test = mongo.findOne<user>("users", textBox3.Text);
            
             user korisnik = new user {

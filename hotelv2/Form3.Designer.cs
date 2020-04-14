@@ -53,31 +53,39 @@
             // 
             // listBox1
             // 
+            this.listBox1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.listBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.listBox1.FormattingEnabled = true;
             this.listBox1.HorizontalScrollbar = true;
             this.listBox1.Location = new System.Drawing.Point(328, 4);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(511, 368);
+            this.listBox1.Size = new System.Drawing.Size(511, 366);
             this.listBox1.TabIndex = 0;
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.Navy;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.button1.Location = new System.Drawing.Point(13, 13);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(142, 62);
             this.button1.TabIndex = 1;
             this.button1.Text = "prikazi sve goste";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.Navy;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button2.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.button2.Location = new System.Drawing.Point(170, 13);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(142, 62);
             this.button2.TabIndex = 2;
             this.button2.Text = "pretrazi";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label8
@@ -100,6 +108,8 @@
             // 
             // sprat
             // 
+            this.sprat.BackColor = System.Drawing.Color.RoyalBlue;
+            this.sprat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.sprat.Location = new System.Drawing.Point(195, 147);
             this.sprat.Name = "sprat";
             this.sprat.Size = new System.Drawing.Size(79, 20);
@@ -107,6 +117,8 @@
             // 
             // soba
             // 
+            this.soba.BackColor = System.Drawing.Color.RoyalBlue;
+            this.soba.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.soba.Location = new System.Drawing.Point(195, 103);
             this.soba.Name = "soba";
             this.soba.Size = new System.Drawing.Size(79, 20);
@@ -150,6 +162,8 @@
             // 
             // brojtel
             // 
+            this.brojtel.BackColor = System.Drawing.Color.RoyalBlue;
+            this.brojtel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.brojtel.Location = new System.Drawing.Point(12, 209);
             this.brojtel.Name = "brojtel";
             this.brojtel.Size = new System.Drawing.Size(159, 20);
@@ -157,6 +171,8 @@
             // 
             // jmbg
             // 
+            this.jmbg.BackColor = System.Drawing.Color.RoyalBlue;
+            this.jmbg.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.jmbg.Location = new System.Drawing.Point(12, 170);
             this.jmbg.Name = "jmbg";
             this.jmbg.Size = new System.Drawing.Size(159, 20);
@@ -164,6 +180,8 @@
             // 
             // prezime
             // 
+            this.prezime.BackColor = System.Drawing.Color.RoyalBlue;
+            this.prezime.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.prezime.Location = new System.Drawing.Point(13, 132);
             this.prezime.Name = "prezime";
             this.prezime.Size = new System.Drawing.Size(159, 20);
@@ -171,6 +189,8 @@
             // 
             // ime
             // 
+            this.ime.BackColor = System.Drawing.Color.RoyalBlue;
+            this.ime.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ime.Location = new System.Drawing.Point(12, 93);
             this.ime.Name = "ime";
             this.ime.Size = new System.Drawing.Size(159, 20);
@@ -178,6 +198,8 @@
             // 
             // dateTimePicker1
             // 
+            this.dateTimePicker1.CalendarMonthBackground = System.Drawing.Color.RoyalBlue;
+            this.dateTimePicker1.CalendarTitleBackColor = System.Drawing.Color.RoyalBlue;
             this.dateTimePicker1.Location = new System.Drawing.Point(13, 299);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
@@ -234,6 +256,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.RoyalBlue;
             this.ClientSize = new System.Drawing.Size(851, 381);
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.checkBox1);
@@ -257,7 +280,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.listBox1);
             this.Name = "Form3";
-            this.Text = "pretrazuj goste";
+            this.Text = "Pretrazuj goste";
             this.Load += new System.EventHandler(this.Form3_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

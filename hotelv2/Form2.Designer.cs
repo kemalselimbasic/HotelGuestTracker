@@ -47,12 +47,15 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.Navy;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.button1.Location = new System.Drawing.Point(12, 377);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(195, 37);
             this.button1.TabIndex = 5;
             this.button1.Text = "dodaj";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label8
@@ -75,6 +78,8 @@
             // 
             // textBox6
             // 
+            this.textBox6.BackColor = System.Drawing.Color.RoyalBlue;
+            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox6.Location = new System.Drawing.Point(195, 80);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(79, 20);
@@ -82,6 +87,8 @@
             // 
             // textBox5
             // 
+            this.textBox5.BackColor = System.Drawing.Color.RoyalBlue;
+            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox5.Location = new System.Drawing.Point(195, 36);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(79, 20);
@@ -89,12 +96,15 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(232, 391);
+            this.button3.BackColor = System.Drawing.Color.Navy;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button3.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.button3.Location = new System.Drawing.Point(213, 377);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.Size = new System.Drawing.Size(94, 37);
             this.button3.TabIndex = 32;
             this.button3.Text = "nazad";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label4
@@ -135,6 +145,9 @@
             // 
             // textBox7
             // 
+            this.textBox7.BackColor = System.Drawing.Color.RoyalBlue;
+            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox7.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.textBox7.Location = new System.Drawing.Point(12, 177);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(159, 20);
@@ -142,6 +155,8 @@
             // 
             // textBox8
             // 
+            this.textBox8.BackColor = System.Drawing.Color.RoyalBlue;
+            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox8.Location = new System.Drawing.Point(12, 129);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(159, 20);
@@ -149,6 +164,8 @@
             // 
             // textBox9
             // 
+            this.textBox9.BackColor = System.Drawing.Color.RoyalBlue;
+            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox9.Location = new System.Drawing.Point(13, 80);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(159, 20);
@@ -156,6 +173,8 @@
             // 
             // textBox10
             // 
+            this.textBox10.BackColor = System.Drawing.Color.RoyalBlue;
+            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox10.Location = new System.Drawing.Point(12, 36);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(159, 20);
@@ -163,7 +182,10 @@
             // 
             // monthCalendar1
             // 
+            this.monthCalendar1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.monthCalendar1.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.monthCalendar1.Location = new System.Drawing.Point(8, 203);
+            this.monthCalendar1.MaxSelectionCount = 100;
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 37;
             // 
@@ -171,6 +193,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.RoyalBlue;
             this.ClientSize = new System.Drawing.Size(324, 423);
             this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.label8);
@@ -188,7 +211,7 @@
             this.Controls.Add(this.textBox10);
             this.Controls.Add(this.button1);
             this.Name = "Form2";
-            this.Text = "Form2";
+            this.Text = "Dodaj gosta";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
